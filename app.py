@@ -35,8 +35,8 @@ def main():
       menu=['inspection', 'analysis']
       choice = st.sidebar.selectbox("Inspecta AI", menu)
       if choice == 'inspection':
-            st.title("Inspecta - GHD.AI")
-            st.markdown("## Sewer Video Analytics Model")
+            st.title("title")
+            st.markdown("## Video Analytics Model")
             #result_file_selector = file_selector()
             
             #st.write('You selected `%s`' % result_file_selector[0])
@@ -50,7 +50,7 @@ def main():
             st.text("\n")
             
             
-            if st.checkbox('Apply Inspecta Trained model for inference/detection'):
+            if st.checkbox('Apply Trained model for inference/detection'):
                   st.markdown("### Deep Learning Algorithm Detecting Defect Types")
                   st.success('Video footage with detection from Inspecta AI Model')
                   st.text("\n")
@@ -117,7 +117,7 @@ def main():
     
                   with col1:
                         
-                        or_image_frame = Image.open(HOME_LOCATION  + result_file_selector[5] + '/PCC_SWP002568_080421_PRLC_D_GHD.mpg_converted.mp4_' + str(selected_frame) + '.jpg')
+                        or_image_frame = Image.open(HOME_LOCATION  + result_file_selector[5] + '/PCC_SWP002568_0804.mp4_' + str(selected_frame) + '.jpg')
         
                         st.write("Selected Original Frame: ", selected_frame)
                         st.image(or_image_frame, caption='Selected original frame', use_column_width=True)#print(result_file_selector[4])
@@ -126,7 +126,7 @@ def main():
     
                   with col2:
         #st.table(df)
-                        image_frame = Image.open(HOME_LOCATION  + result_file_selector[4] + '/mask_PCC_SWP002568_080421_PRLC_D_GHD.mpg_converted.mp4_' + str(selected_frame) + '.jpg')
+                        image_frame = Image.open(HOME_LOCATION  + result_file_selector[4] + '/mask_PCC_.mp4_' + str(selected_frame) + '.jpg')
                         st.write("Selected Defect Detected frame: ", selected_frame)
                         
                         st.image(image_frame, caption='Selected defect detected frame', use_column_width=True)
