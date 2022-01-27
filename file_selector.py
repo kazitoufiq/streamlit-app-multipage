@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 
-HOME_LOCATION='C:/Users/kwadud/OneDrive - GHD/WellingtonWaterDemo2/' 
+HOME_LOCATION='C:/User/' 
 
 def file_selector(folder_path=HOME_LOCATION):
     filenames = os.listdir(folder_path)
